@@ -473,7 +473,7 @@ for i in range(n):
     ax.scatter(traj[-1, 0], traj[-1, 1], s=300, c=colors[i], marker='*',
                edgecolors='black', linewidths=2, zorder=4)
 
-ax.set_title('Trajectoires Mean-Shift', fontsize=14, fontweight='bold')
+ax.set_title('Trajectoires', fontsize=14, fontweight='bold')
 ax.set_xlabel('X', fontsize=12)
 ax.set_ylabel('Y', fontsize=12)
 # ax.legend(loc='upper left')
@@ -513,7 +513,7 @@ ax.set_xlim(-4, 11)
 ax.set_ylim(-4, 10)
 
 plt.tight_layout()
-plt.savefig('meanshift_manual_result.png', dpi=300, bbox_inches='tight')
+plt.savefig('result_two.png', dpi=300, bbox_inches='tight')
 print("\n✅ Graphique sauvegardé : meanshift_manual_result.png")
 plt.show()
 
