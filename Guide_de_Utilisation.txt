@@ -1,0 +1,28 @@
+GUIDE D'UTILISATION
+
+Ce dossier contient l'implémentation de l'algorithme de clustering par déplacement vers les maxima de densité avec optimisation.
+
+FICHIERS DE CODE :
+
+code.py - Implémentation avec un grand jeu de données (260 points). Permet d'observer le comportement de l'algorithme sur des données réalistes avec une structure complexe.
+
+small_data.py - Version pédagogique avec peu de points (5 à 9 points). Permet de suivre facilement chaque étape de l'algorithme : convergence itérative, calcul des densités et fusion des clusters.
+
+FICHIER DE SORTIE :
+
+output.txt - Trace d'exécution complète montrant pas à pas toutes les étapes : calcul du bandwidth, convergence de chaque point avec distances et poids, identification des clusters, processus d'optimisation avec les fusions, et résultat final.
+
+IMAGES DE VISUALISATION :
+
+result_one.png et result_two.png - Résultats sur le grand jeu de données (points initiaux, trajectoires de convergence, clusters finaux).
+
+result_one_with_optimization.png et result_two_optimized_result.png - Comparaison avant/après optimisation montrant l'élimination des micro-clusters artificiels.
+
+optimization_example.png - Démonstration sur une structure en "8" illustrant l'efficacité de la fusion pondérée par densité.
+
+EXÉCUTION :
+
+Pour le grand jeu de données : python code.py > output.txt
+Pour la version pédagogique : python small_data.py
+
+Les images sont générées automatiquement lors de l'exécution.
